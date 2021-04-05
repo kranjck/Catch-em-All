@@ -1,21 +1,27 @@
 //
-//  Creatures.swift
+//  CreatureDetail.swift
 //  Catch 'em All
 //
 //  Created by Gigi Kranjc on 2021-04-05.
 //
 
 import Foundation
-class Creatures {
+
+class CreatureDetail {
+    var height = 0.0
+    var weight = 0.0
+    var imageURL = ""
+    var urlString = ""
+    
     private struct Returned: Codable {
-        var count: Int
-        var next: String?
-        var results: [Creature]
+        var height: Double
+        var weight: Double
+        var sprites: Sprites
+    }
+    private struct Sprites: Codable {
+        var front_default: String?
     }
     
-    var count = 0
-    var urlString = "https://pokeapi.co/api/v2/pokemon/"
-    var creatureArray: [Creature] = []
     
     func getData(completed: @escaping () -> ()) {
         print("🌎 we are acceessing the url: \(urlString)")
@@ -40,9 +46,10 @@ class Creatures {
             // deal with the data
             do {
                 let returned = try JSONDecoder().decode(Returned.self, from: data!)
-                self.count = returned.count
-                self.urlString = returned.next ?? ""
-                self.creatureArray = returned.results
+                self.weight = returned.weight
+                self.height = returned.height
+                self.imageURL = returned.sprites.front_default ?? ""
+                
                 
             }catch{
                 print("😡 JSON ERROR: \(error.localizedDescription)")
@@ -51,8 +58,5 @@ class Creatures {
         }
         task.resume()
     }
-    
 }
-
-
 

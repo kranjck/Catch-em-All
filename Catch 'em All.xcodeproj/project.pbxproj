@@ -15,6 +15,8 @@
 		1B38F00C261BABFE00ACF49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B38F00A261BABFE00ACF49A /* LaunchScreen.storyboard */; };
 		1B38F016261BB19000ACF49A /* Creatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38F015261BB19000ACF49A /* Creatures.swift */; };
 		1B38F01A261BBE3200ACF49A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38F019261BBE3200ACF49A /* DetailViewController.swift */; };
+		1B38F01D261BC20B00ACF49A /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38F01C261BC20B00ACF49A /* Creature.swift */; };
+		1B38F020261BC58600ACF49A /* CreatureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38F01F261BC58600ACF49A /* CreatureDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1B38F00D261BABFE00ACF49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B38F015261BB19000ACF49A /* Creatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creatures.swift; sourceTree = "<group>"; };
 		1B38F019261BBE3200ACF49A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1B38F01C261BC20B00ACF49A /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		1B38F01F261BC58600ACF49A /* CreatureDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,9 @@
 			children = (
 				1B38EFFF261BABFD00ACF49A /* AppDelegate.swift */,
 				1B38F001261BABFD00ACF49A /* SceneDelegate.swift */,
+				1B38F01C261BC20B00ACF49A /* Creature.swift */,
 				1B38F015261BB19000ACF49A /* Creatures.swift */,
+				1B38F01F261BC58600ACF49A /* CreatureDetail.swift */,
 				1B38F003261BABFD00ACF49A /* ListViewController.swift */,
 				1B38F019261BBE3200ACF49A /* DetailViewController.swift */,
 				1B38F005261BABFD00ACF49A /* Main.storyboard */,
@@ -145,7 +151,9 @@
 			files = (
 				1B38F016261BB19000ACF49A /* Creatures.swift in Sources */,
 				1B38F004261BABFD00ACF49A /* ListViewController.swift in Sources */,
+				1B38F01D261BC20B00ACF49A /* Creature.swift in Sources */,
 				1B38F01A261BBE3200ACF49A /* DetailViewController.swift in Sources */,
+				1B38F020261BC58600ACF49A /* CreatureDetail.swift in Sources */,
 				1B38F000261BABFD00ACF49A /* AppDelegate.swift in Sources */,
 				1B38F002261BABFD00ACF49A /* SceneDelegate.swift in Sources */,
 			);
