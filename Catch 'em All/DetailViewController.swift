@@ -19,11 +19,19 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "pokemon"
         nameLabel.text = creature.name.capitalized
-        heightLabel.text = "huge"
-        weightLabel.text = "snacc"
+
         
         if creature == nil {
             creature = Creature(name: "", url: "")
+        }
+        let creatureDetail = CreatureDetail()
+        
+        creatureDetail.urlString = creature.url
+        creatureDetail.getData {
+            DispatchQueue.main.async {
+                self.heightLabel.text = "\(creatureDetail.height)"
+                self.weightLabel.text = "\(creatureDetail.weight)"
+            }
         }
     }
     
