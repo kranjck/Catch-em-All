@@ -51,3 +51,5 @@ class DetailViewController: UIViewController {
 //    cell.textLabel?.text = "\(indexPath.row + 1). \(creatures.creatureArray[indexPath.row].name)"
 //    return cell
 //}
+
+// test
